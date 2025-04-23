@@ -823,8 +823,6 @@ PRODUCT_PACKAGES += \
     libgf_hal \
     libgoodixhwfingerprint \
     libhdr_tm \
-    libhdrdynamic \
-    libhdrdynamicootf \
     libhta \
     libhydra_common \
     libipebpsstriping \
