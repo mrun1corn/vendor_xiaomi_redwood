@@ -442,7 +442,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/focaltech_ts_fw_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/focaltech_ts_fw_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_cfg_group_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_cfg_group_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_firmware_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_firmware_m20.bin \
-    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_test_limits_255.csv
+    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_test_limits_255.csv \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina_vendor.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_with_dolby_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_with_dolby_lahaina.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_shima_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shima_v1_vendor.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_with_dolby_shima.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_with_dolby_shima.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_with_dolby_yupik.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_with_dolby_yupik.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
 
 PRODUCT_PACKAGES += \
     libldacBT_abr \
@@ -1178,7 +1186,6 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
-    c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.qti.gnss@4.0-service.xml \
@@ -1252,7 +1259,19 @@ PRODUCT_PACKAGES += \
     time_daemon \
     vppservice \
     xtra-daemon \
-    dpmd
+    dpmd \
+    c2.dolby.avc.dec \
+    c2.dolby.avc.sec.dec \
+    c2.dolby.client \
+    c2.dolby.egl \
+    c2.dolby.hevc.dec \
+    c2.dolby.hevc.enc \
+    c2.dolby.hevc.sec.dec \
+    c2.dolby.store \
+    libdolbyottcameracontrol \
+    libdolbyvision \
+    c2_manifest_vendor.xml \
+    dolbycodec2 \
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
